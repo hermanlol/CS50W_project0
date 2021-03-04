@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--TODO 1.make all the search to be functionable 2. USING BOOTSTRAP to make the website look a lot like google-->
     <head>
+    <!--TODO 1.make all the search to be functionable 2. USING BOOTSTRAP to make the website look a lot like google-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
         <title>Image Search</title>
     </head>
     <body>
         <!--Action attribute on the form told the browser that when the form is submitted, the data should be send to google.com/search
         by adding an input field to the form whose name attribute was q, whatever the user types into that input field is included as a GET parameter in the URL-->
-        <form action="https://google.com/search">
-            <input type="text" name="tbm" autocomplete="off">
-            <input type="submit" value="Google Search">
+        <form action="https://image.google.com/search">
+            <input type="text" name="q" autocomplete="off">
+            <input type="hidden" name="tbm" value="isch">
+            <input type="submit" value="Google Image Search">
         </form>
     </body>
 </html>
