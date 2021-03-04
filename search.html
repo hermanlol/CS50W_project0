@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--TODO 1.make all the search to be functionable 2. USING BOOTSTRAP to make the website look a lot like google-->
     <head>
         <title>Search</title>
     </head>
@@ -7,8 +8,9 @@
         <!--Action attribute on the form told the browser that when the form is submitted, the data should be send to google.com/search
         by adding an input field to the form whose name attribute was q, whatever the user types into that input field is included as a GET parameter in the URL-->
         <form action="https://google.com/search">
-            <input type="text" name="q">
+            <input type="text" name="q" autocomplete="off">
             <input type="submit" value="Google Search">
+            <input type="submit" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" name="btnI">
         </form>
     </body>
 </html>
