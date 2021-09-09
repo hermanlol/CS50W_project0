@@ -1,0 +1,15 @@
+.searchnav{
+    color: grey;
+}
+.searchnav:hover{
+    text-decoration: underline;
+    color: grey;
+}
+
+.marginleft {
+    margin-left: 30px;
+}
+
+h5{
+    color: rgb(216, 8, 8);
+}
